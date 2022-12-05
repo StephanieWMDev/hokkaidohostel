@@ -1,0 +1,613 @@
+
+
+
+html,
+body{
+    font-family:helvetica;
+
+}
+@font-face {
+    font-family: 'canela';
+    src: url("/Users/lehanna227/Desktop/assess2/Users/lehanna227/Desktop/assess2/assets/CanelaText-RegularItalic-Trial.otf");
+}
+@font-face {
+    font-family: "canela-black";
+    src: url("/Users/lehanna227/Desktop/assess2/assets/CanelaText-Black-Trial.otf");
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: rgb(3, 7, 51);
+}
+.form-h1{
+    color:rgb(55, 53, 70);
+    font-size: 1.5rem;
+    display:inline-flex;
+    margin:0 auto;
+
+}
+.h2-form{
+    color:rgb(55, 53, 70);
+    font-size: 1.2rem;
+    display:inline-flex;
+    margin:1rem auto;
+
+}
+.form-buttom{
+    padding:.44rem 12rem;
+    width:27em;
+    max-width: 100%;
+    font-size:1.2rem;
+    background-color:rgb(30 82 30);
+    color:white;
+    letter-spacing: 0.15rem;
+    margin-top: 1rem;
+}
+/* -----LOGO--------------*/
+
+
+
+.logo-bg{
+    background-color: rgb(3, 7, 51);
+}
+
+.hokkaido-logo > img{
+    width: 19em;
+    max-width: 55%;
+    float:left;
+    margin: 2rem auto;
+    display: block;
+    padding: 0;
+    padding-bottom: 0;
+    border: 1rem solid rgb(166 11 11);
+    opacity: 0.8;
+    border-radius: 50%;
+   
+   
+}
+
+/* -----navbar --------------*/
+
+
+nav{
+    background: rgb(166 11 11);
+    padding: 0 15px;
+    position: absolute;
+    width: 70%;
+    margin-top: -15%;
+    top: 24em;
+    left: 21em;
+    opacity: .8;
+
+}
+ul {
+    list-style-type: none;
+
+}
+.navbar-list> li > a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar-list{
+    display:flex;
+   flex-wrap: nowrap;
+   margin-left: auto;
+   margin-right: auto;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   padding-right:10%;
+   
+
+}
+
+/* -----hero section --------------*/
+
+
+.hero-section{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width:80%;
+    margin:0 auto;
+    padding:0.4rem 0.8rem;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-rows: 30em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      "hero-img hero-img2"; 
+      position: relative;
+    top: 4em;
+     
+  
+    background-repeat: no-repeat;
+}
+.hero-img{
+    grid-area: hero-img;
+    background-image:url("/Users/lehanna227/Desktop/assess2/assets/hokkaido-town-img.jpg");
+    display:flex;
+    justify-content: center;
+  
+
+
+    height:100%;
+    background-repeat: no-repeat;
+}
+.hero-img2{
+    grid-area: hero-img2;
+    display:flex;
+    justify-content: center;
+ 
+    background-image: url("/Users/lehanna227/Desktop/assess2/assets/pexels-maria-orlova-4947573 (1).jpg");
+}
+.hero-text{
+    display: block;
+    position:absolute;
+    background-color: rgba(231, 231, 228, 0.967);
+    margin:0 auto;
+    left: 30%;
+    right: 30%;
+    padding:0rem 2rem;
+    
+   top: 0;
+    
+}
+.hero-h1{
+    color:white;
+    background-color: rgba(18, 18, 54, 0.929);
+    padding:3rem;
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+   
+}
+
+
+/* -----HOSTEL / STAY section --------------*/
+.hostel{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width:80%;
+    margin:0 auto;
+    padding:0.4rem 0.8rem;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-rows: 42em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      "hostel-amenities book-hostel"; 
+     
+  
+    background-repeat: no-repeat;
+    margin-top:3em;
+    position:relative;
+    top:4em;
+
+}
+
+.hostel-amenities{
+    grid-area:hostel-amenities;
+    background-image:url("assets/accomodation.jpg");
+    display:flex;
+    justify-content: center;
+    border:solid 1px rgb(234, 232, 239);
+   
+
+    padding-bottom:0.2rem;
+    padding-top:0.2rem;
+    position:relative;
+    bottom:0.4rem;
+
+
+    width:91%;
+    height:100.5%;
+    background-repeat: no-repeat;
+    
+}
+.book-hostel{
+    grid-area:book-hostel;
+    display:flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    position: relative;
+    top: 6em;
+}
+
+.hostel-h1{
+    color:rgb(136, 135, 132);
+    font-weight: 900;
+    font-size:3rem;
+  
+
+}
+h1.form-h1{
+    white-space: nowrap;
+    position: absolute;
+    padding: 2rem;
+    top: -3.5em;
+}
+.hostel-form{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:rgb(55, 53, 70);
+    font-weight:900;
+
+   
+
+}
+
+
+select#room {
+    width: 100%;
+    margin-top: 1rem;
+    color: #1a1a9e;
+}
+input{
+    color: #1a1a9e;
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.hostel_form-detail{
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.room-size-hostel_form {
+    position: relative;
+    bottom: 1rem;
+}
+
+.dates-form_detaiils{
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+
+/* -----restaurant section --------------*/
+
+
+
+.restaurant-section{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width:80%;
+    margin:0 auto;
+    padding:0.4rem 0.8rem;
+    grid-template-columns: 1.7fr 2fr; 
+    grid-template-rows: 34em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      "restaurant-images book-hostel"; 
+     font-family: 'canela';
+  
+    background-repeat: no-repeat;
+    margin-top:3em;
+    position:relative;
+    top:4em;
+
+}
+
+.restaurant-images{
+grid-area: restaurant-images;
+background-image: url("assets/food-img.jpg");
+display:flex;
+    justify-content: center;
+    padding-bottom:0.2rem;
+    padding-top:0.2rem;
+    position:relative;
+    bottom:0.4rem;
+    border:solid 1px rgb(234, 232, 239);
+
+
+  
+    height:100.7%;
+    background-repeat: no-repeat;
+}
+.restaurant-menu{
+    grid-area: book-hostel;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight:500;
+    background-repeat: round;
+    border-right:2em solid transparent;
+    font-family: canela;
+
+    
+    background-image: url("/Users/lehanna227/Desktop/assess2/assets/pexels-eva-bronzini-7598536 (1).jpg");
+
+}
+.restaurant-menu > table{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    right: 2.9rem;
+    border:none;
+
+}
+.restaurant-menu > tr{
+    margin-bottom:1rem;
+    border:none;
+}
+.th-table_menu{
+    margin-bottom:1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  
+}
+.td-table_menu{
+    padding-bottom:.5rem;
+    padding-left:4rem;
+    
+}
+.br{
+    position:relative;
+    right:.5rem;
+
+}
+.dr{
+    position:relative;
+    right:1rem;
+
+}
+.courses{
+    position:relative;
+    left: 1rem;
+
+}
+.rest-menu_h1{
+    position:relative;
+    top: -0.9rem;
+    left: 0.33rem;
+    font-size: 1.9rem;
+}
+
+
+/* -----EQUIPMENT  section --------------*/
+
+
+.equipment_hire-section{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width:80%;
+    margin:0 auto;
+   
+    padding:0.4rem 1%;
+    grid-template-columns: 1.7fr 2fr; 
+    grid-template-rows: 30em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      "equipment-images equip_hire-form"; 
+     
+  
+    background-repeat: no-repeat;
+    margin-top:3em;
+    min-width:33em;
+    position:relative;
+    top:4em;
+
+}
+
+.equipment-images{
+    grid-area:equipment-images ;
+    border:solid 1px rgb(234, 232, 239);
+    padding-bottom:0.2rem;
+    padding-top:0.2rem;
+    position:relative;
+    bottom:0.4rem;
+    background-image: url("/Users/lehanna227/Desktop/assess2/assets/pexels-melvin-wahlin-3741382 (1).jpg");
+    display:flex;
+    justify-content: center;
+    height:100.6%;
+    background-repeat: no-repeat;
+}
+
+.equip_hire-form{
+    grid-area:equip_hire-form;
+    border: 0.2rem solid #535380;
+    margin: 1rem;
+    padding: 1rem 5% 1rem 15%;
+    background-color: aliceblue;
+    width:34em;
+    max-width:70%;
+ 
+   
+ 
+}
+.table-border_equip{
+    border: 0.1rem solid blue;
+    padding:.3rem .8rem;
+
+
+}
+
+.scd-table_equip-hire > th{
+
+   padding-top: .7rem;
+  
+
+}
+h1.equip-hire_h1 {
+    position: relative;
+    left: 10%;
+}
+
+/* -----CONTACT section --------------*/
+
+.contact{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width:80%;
+    height:30em;
+    margin:0 auto;
+    padding:0.4rem 0.8rem;
+    grid-template-columns:1fr; 
+    grid-template-rows: 20em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      "hokkaido-map"
+      "contact-form"
+      ; 
+     
+  
+    background-repeat: no-repeat;
+    margin-top:3em;
+    position:relative;
+    top:4em;
+    padding-bottom:0;
+
+}
+
+.hokkaido-map{
+    grid-area: hokkaido-map;
+    display:flex;
+justify-content: center;
+margin:0 auto;
+position:relative;
+opacity: .8;
+width: 44em;
+top: -0.3rem;
+right:5%;
+height: 67%;
+background-repeat: no-repeat;
+background-image: url("assets/pexels-mike-b-3683938 (1) (1).jpg");
+border: 0.1rem solid white;
+cursor:pointer;
+}
+.contact-form{
+    grid-area: contact-form;
+    color:rgb(3, 7, 51);
+    position:relative;
+    right:5%;
+    
+}
+.contact-details {
+    display: flex;
+    position: relative;
+    left: 10%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.map-h1{
+    color: white;
+    background: #091d47;
+    height: fit-content;
+    letter-spacing: .3rem;
+    padding: 2.1rem 15.1rem;
+    width: 9em;
+    position: relative;
+    top: 12rem;
+    right: rem;
+    font-size: 2rem;
+    opacity: .9;
+}
+
+#phone-svg{
+    
+    position: relative;
+    right: 2rem;
+
+    max-width:4em;
+}
+#email-svg{
+    
+    max-width:4em;
+    position: relative;
+    right: -1.3rem;
+}
+#gps-svg{
+
+    max-width:4em;
+}
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    position: relative;
+    left: 2rem;
+   
+
+}
+.align-list_contact{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+    right: 3.5rem;
+}
+
+.em {
+        left: -2.5rem;
+}
+.google-maps_pointer{
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+    color:rgb(3, 7, 51);
+}
+.contat-svg{
+    position:relative;
+    left:3rem;
+}
+.gps{
+    left:-3rem;
+}
+
+.ph{
+    left:0rem;
+}
+.venue-images{
+    display: grid; 
+    background-color: rgba(231, 228, 228, 0.838);
+    width: 98%;
+    height: 84%;
+    margin:0 auto;
+    padding:0.4rem 0.8rem;
+    grid-template-columns:1fr 1fr 1fr 1fr; 
+    grid-template-rows: 15em; 
+    gap: 0.1rem; 
+    grid-template-areas: 
+      " hostel-image restaurant-image bar-image couple-image "
+    
+      ; 
+     
+  
+    background-repeat: no-repeat;
+    margin-top:3em;
+    position:relative;
+    top:4em;
+    right:6%;
+   padding-bottom:2em;
+
+}
+.restaurant-image{
+    grid-area:restaurant-image;
+}
+.bar-image{
+    grid-area:bar-image;
+}
+.hostel-image{
+    grid-area:hostel-image;
+}
+.restaurant-image{
+    grid-area:couple-image;
+}
